@@ -7,9 +7,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Calling Routes
-var routes = require("./routes");
+var routes = require("./route");
 routes(app);
 
 app.listen(3001, () => {
-  console.log("Server started on port");
+  console.log(`Server started on port`);
 });
